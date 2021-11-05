@@ -13,6 +13,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+//using System.Threading ? why ?
+
+
 namespace flappy_bird_wpf_game
 {
     /// <summary>
@@ -20,9 +23,47 @@ namespace flappy_bird_wpf_game
     /// </summary>
     public partial class MainWindow : Window
     {
+        //
+        DispatcherTimer gameTimer = new DispatcherTimer();
+
+        double score;
+        int gravity = 8;
+        bool gameOver;
+        Rect flappyBirdHitBox;
+
+
+
         public MainWindow()
         {
             InitializeComponent();
+
+            gameTimer.Tick += MainEventTimer;
+            gameTimer.Interval = TimeSpan.FromMilliseconds(20);
+            
+            StartGame();
         }
+
+        private void KeyIsDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void KeyIsUp(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void StartGame()
+        {
+
+        }
+
+
+        private void EndGame()
+        {
+
+        }
+        
+
     }
 }
