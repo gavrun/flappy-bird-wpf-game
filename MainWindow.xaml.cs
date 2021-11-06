@@ -167,7 +167,6 @@ namespace flappy_bird_wpf_game
                         // do i get score for passing clouds?? weird but okay
                         score += 5;
                     }
-
                 }
             }
         }
