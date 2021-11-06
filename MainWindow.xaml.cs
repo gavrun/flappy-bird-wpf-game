@@ -152,7 +152,7 @@ namespace flappy_bird_wpf_game
                     //fail when collide with pipes
                     if (flappyBirdHitBox.IntersectsWith(PillarHitBox))
                     {
-                        //EndGame();
+                        EndGame();
                     }
                 }
 
